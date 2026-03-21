@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "criticalData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newData",
+						"type": "uint256"
+					}
+				],
+				"name": "restrictedUpdate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newData",
+						"type": "uint256"
+					}
+				],
+				"name": "updateCriticalData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Implements safety checks using assert() and revert() to protect critical data.",
+			"kind": "dev",
+			"methods": {
+				"restrictedUpdate(uint256)": {
+					"details": "Updates data but restricts access to the owner. Uses revert() to handle external input/permission errors gracefully."
+				},
+				"updateCriticalData(uint256)": {
+					"details": "Updates data and uses assert to check for internal consistency. Note: Since uint256 is unsigned, it is technically always >= 0,  but this demonstrates how assert() checks for \"Invariants.\""
+				}
+			},
+			"title": "HackanaDefense",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HackanaDefense.sol": "HackanaDefense"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HackanaDefense.sol": {
+			"keccak256": "0xb310cb33faba90c8bf7ce42f7902075e29d991e4aa6a48b2d9c255f546462486",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7c510010e12b4a4de27c83fb1a08eb55dcbb0782eb0ad2e925b839381da96e5d",
+				"dweb:/ipfs/Qma1x4na4TNLTXusu3dLt4AaFZLPdP7QPAmRQodZYsSk2g"
+			]
+		}
+	},
+	"version": 1
+}
