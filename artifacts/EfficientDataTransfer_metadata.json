@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "echoData",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "memoryData",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EfficientDataTransfer.sol": "EfficientDataTransfer"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EfficientDataTransfer.sol": {
+			"keccak256": "0xfcd02f9aa82cb9d0102654cbe87373c50250513568c17046458ab08686d1c3f7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3c1c4cb40d8baa567ea241eb517eed3b99eeed7e165debeda4dbfa88d382b59d",
+				"dweb:/ipfs/QmR5wYy3hg5LJkWjZuE1Qk1w8pudRXHD8sSsvs9zND2FyU"
+			]
+		}
+	},
+	"version": 1
+}
