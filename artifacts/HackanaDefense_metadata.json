@@ -6,13 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "criticalData",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "transactionAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feePercent",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateFee",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,61 +26,26 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "owner",
+				"name": "city",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_newData",
-						"type": "uint256"
-					}
-				],
-				"name": "restrictedUpdate",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_newData",
-						"type": "uint256"
-					}
-				],
-				"name": "updateCriticalData",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"details": "Implements safety checks using assert() and revert() to protect critical data.",
 			"kind": "dev",
-			"methods": {
-				"restrictedUpdate(uint256)": {
-					"details": "Updates data but restricts access to the owner. Uses revert() to handle external input/permission errors gracefully."
-				},
-				"updateCriticalData(uint256)": {
-					"details": "Updates data and uses assert to check for internal consistency. Note: Since uint256 is unsigned, it is technically always >= 0,  but this demonstrates how assert() checks for \"Invariants.\""
-				}
-			},
-			"title": "HackanaDefense",
+			"methods": {},
 			"version": 1
 		},
 		"userdoc": {
@@ -85,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"HackanaDefense.sol": "HackanaDefense"
+			"MathLibrary.sol": "HackanaDefense"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -99,12 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"HackanaDefense.sol": {
-			"keccak256": "0xb310cb33faba90c8bf7ce42f7902075e29d991e4aa6a48b2d9c255f546462486",
+		"MathLibrary.sol": {
+			"keccak256": "0x21a358a8be9223806b2337b887195bea44ad4b3ec80fbeb2246896383dc7bc08",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c510010e12b4a4de27c83fb1a08eb55dcbb0782eb0ad2e925b839381da96e5d",
-				"dweb:/ipfs/Qma1x4na4TNLTXusu3dLt4AaFZLPdP7QPAmRQodZYsSk2g"
+				"bzz-raw://c909ce06c47a21f5e6bcee95c8add142043a8cb5ab56a5f5d4277a01f1e51bee",
+				"dweb:/ipfs/QmdGAwxKVc6DoqgeTgedda6cg8xEq4mZZrDnpnPdKMtGKS"
 			]
 		}
 	},
