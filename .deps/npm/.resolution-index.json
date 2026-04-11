@@ -1,0 +1,10 @@
+{
+  "BocaueToken.sol": {
+    "__sources__": {
+      "BocaueToken.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract SanJuanToken {\r\n    string public name = \"SanJuanToken\";\r\n    string public symbol = \"SJT\";\r\n    uint8 public decimals = 18;\r\n    uint256 public totalSupply;\r\n\r\n    mapping(address => uint256) public balanceOf;\r\n    mapping(address => mapping(address => uint256)) public allowance;\r\n\r\n    constructor(uint256 _initialSupply) {\r\n        totalSupply = _initialSupply;\r\n        balanceOf[msg.sender] = _initialSupply;\r\n    }\r\n\r\n    function transfer(address _to, uint256 _value) public returns (bool) {\r\n        require(balanceOf[msg.sender] >= _value, \"Not enough balance\");\r\n        balanceOf[msg.sender] -= _value;\r\n        balanceOf[_to] += _value;\r\n        return true;\r\n    }\r\n\r\n    function approve(address _spender, uint256 _value) public returns (bool) {\r\n        allowance[msg.sender][_spender] = _value;\r\n        return true;\r\n    }\r\n\r\n     function transferFrom(address _from, address _to, uint256 _value)\r\n    public returns (bool) {\r\n        require(balanceOf[_from] >= _value, \"Not enough balance\");\r\n        require(allowance[_from][msg.sender] >= _value, \"Allowance exceeded\");\r\n\r\n          balanceOf[_from] -= _value;\r\n          balanceOf[_to] += _value;\r\n          allowance[_from][msg.sender] -= _value;\r\n          return true;\r\n      }\r\n}",
+        "file": "BocaueToken.sol"
+      }
+    }
+  }
+}
