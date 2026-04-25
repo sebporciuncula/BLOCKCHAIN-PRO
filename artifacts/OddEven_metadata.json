@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "CheckOddEven",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"JohnrianMaac/oddeven.sol": "OddEven"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"JohnrianMaac/oddeven.sol": {
+			"keccak256": "0xeeb9198a1f18a58f959f9e72e4c15f67d4403bb6adf4fa3fe8a765c647c66ce8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://754eb5d36e0b82247f2ce94684f9366c4a1e8ca771d3ad31b72253657be04b0f",
+				"dweb:/ipfs/QmWNBu6oT5wd8CuFg9XysCMaDzyini66uN9BhmQ8WsLsWH"
+			]
+		}
+	},
+	"version": 1
+}

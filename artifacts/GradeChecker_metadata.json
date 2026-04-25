@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "grade",
+						"type": "uint256"
+					}
+				],
+				"name": "PassOrFail",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"JohnrianMaac/grade.sol": "GradeChecker"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"JohnrianMaac/grade.sol": {
+			"keccak256": "0x50d6a4182d429b12a6696817cfd5ed1aa0bf9a1237a731e1cfb3db7e4c079ce0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cd7c4358ad1edc7009e70dde6a0743ed7c77d21a1f93c0960e9bc2649ae1d2f1",
+				"dweb:/ipfs/QmNMeiaJ68pk1rQCDnwoi4DKP64C5EfnSvQt1JLeuDYWgw"
+			]
+		}
+	},
+	"version": 1
+}

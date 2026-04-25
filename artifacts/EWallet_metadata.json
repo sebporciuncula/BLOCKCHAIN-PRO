@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "wallet",
+						"type": "uint256"
+					}
+				],
+				"name": "eWallet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"JohnrianMaac/eWallet.sol": "EWallet"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"JohnrianMaac/eWallet.sol": {
+			"keccak256": "0xb55cc8d2824297e23f1ff2bae9531052d3fb1bf6f77164d7e45e069e1ec49946",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1a4a27a5812b74e101295503ba6702059e0da05415524f5555b61cef3e2604f",
+				"dweb:/ipfs/Qma2KAd1nQgPfSF8y3zkSt256xvdES7MDA1cDfQ5DneC4K"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "basePrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "demandFactor",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeFactor",
+						"type": "uint256"
+					}
+				],
+				"name": "calculatePrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"calculatePrice(uint256,uint256,uint256)": {
+					"details": "Calculates dynamic pricing for a ride using percentage adjustments.",
+					"params": {
+						"basePrice": "The base price of the ride.",
+						"demandFactor": "A percentage increase based on demand (e.g. 20 means +20%).",
+						"timeFactor": "A percentage increase based on time of day (e.g. 10 means +10%)."
+					},
+					"returns": {
+						"_0": "The dynamically calculated ride price."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DynamicPricing.sol": "DynamicPricing"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DynamicPricing.sol": {
+			"keccak256": "0x3d2f9b83e7d167b4e24455059e68f582f196ce6793568db7bb4ea59bebc279b9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1e97595cd70efb504cde520a3db7855420881dd86bc135e213a18c85496bd87f",
+				"dweb:/ipfs/QmWUGRceuqeUyWqob9xtWLAnoYwxZLmaUD5VKBhQxYueno"
+			]
+		}
+	},
+	"version": 1
+}

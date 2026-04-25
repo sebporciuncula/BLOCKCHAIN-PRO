@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "intersection",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "newState",
+						"type": "string"
+					}
+				],
+				"name": "changeLight",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "lightState",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"changeLight(string,string)": {
+					"details": "Task 2: Change the traffic light state dynamically with validation",
+					"params": {
+						"intersection": "The name of the intersection to update",
+						"newState": "The new color (\"red\", \"yellow\", or \"green\")"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TrafficLightManager.sol": "TrafficLightManager"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TrafficLightManager.sol": {
+			"keccak256": "0x3417fbe463d50b42e5e9ba35395a1d7162fcea8f78b28acd51e7fc44b7b53714",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://36c904ce1a6ba99d785fb9ec5b859d9efec9b7cf198cfee5f767b75fb5899252",
+				"dweb:/ipfs/QmT3QeNRner3NUpY38USFU9mZeoq8BouGLum8CzXzFgy9u"
+			]
+		}
+	},
+	"version": 1
+}

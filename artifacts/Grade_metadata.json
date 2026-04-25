@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "grade",
+						"type": "uint256"
+					}
+				],
+				"name": "PassOrFail",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"odd/grade.sol": "Grade"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"odd/grade.sol": {
+			"keccak256": "0xdc32490d0ba6d212a162eea0ff9619a28573bf081ec5bd04675d3024cd628cd7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eba9fdf9b6711900639e218afd54f0e91796d99502ae58067cc2186ad837069a",
+				"dweb:/ipfs/QmXQYX1UdxEeg8bQq3saHcJbJ2XrmK7qd9Jggt5d6ymkae"
+			]
+		}
+	},
+	"version": 1
+}
